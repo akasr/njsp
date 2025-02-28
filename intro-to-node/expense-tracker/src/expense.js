@@ -8,7 +8,7 @@ export const addExpense = async (expense, description) => {
     Amount: expense,
   };
   await insertDB(data);
-  console.log(`✅ Expense added successfully ${data.ID}`);
+  console.log(`✅ Expense added successfully (ID: ${data.ID})`);
 };
 
 export const listExpenses = async () => {
