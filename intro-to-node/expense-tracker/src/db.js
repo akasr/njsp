@@ -13,7 +13,7 @@ export const saveDB = async (db) => {
 
 export const insertDB = async (data) => {
     const db = await getDB();
-    db.push(data);
+    db.expenses.push(data);
     await saveDB(db);
     return data;
 }
